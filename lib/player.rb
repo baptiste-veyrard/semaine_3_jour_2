@@ -11,7 +11,6 @@ attr_accessor :life_points
 		if @life_points > 0
 		print "#{@name} a #{@life_points} points de vie"
 		else
-		 	 @life_points <= 0
 		print "#{@name} est morte"
 		end
 	end
@@ -19,7 +18,7 @@ attr_accessor :life_points
 	def gets_damage(player, damage)
 		player.life_points -= damage
 		if player.life_points == 0 || player.life_points <0
-			print "le joueur #{player.name} a été tué"
+			print "Le joueur #{player.name} a été tué.\n"
 		end	
 	end
 
